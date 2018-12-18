@@ -8,5 +8,24 @@
 
 import Foundation
 
-print("Hello, World!")
+var arrDict = [[String:Any]]()
+
+arrDict = [
+    ["Name":"Bhadresh","Course":"iOS"],
+    ["Name":"Harsha","Course":"iOS"],
+    ["Name":"Rahul","Course":"Java"],
+    ["Name":"Rajesh","Course":"PHP"]
+]
+
+for dict in arrDict{
+    for k in dict.keys{
+        print("\(k):\(dict[k]!)", separator: "", terminator: " ")
+    }
+    print("\n\n")
+}
+print("\n\n\n\n")
+
+
+print(arrDict)
+
 
